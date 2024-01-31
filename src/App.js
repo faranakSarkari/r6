@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import React from 'react'
+import './App.css'
+import User from './Components/User'
+import StickyNotes from './Components/StickyNotes'
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+     {/* <User name='alireza' lName='aghaee' />
+     <User name='ahmad' lName='aghaee' />
+     <User name='reza' lName='aghaee' />
+     <User name='ali' lName='aghaee' />
+     <User name='maryam' lName='zakery' /> */}
+     <StickyNotes/>
+    </>
+   
+  )
 }
-
-export default App;
